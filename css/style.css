@@ -1,0 +1,353 @@
+/*common styles*/
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+/*end common styles*/
+
+/*cap*/
+.cap {
+    width: 100%;
+    height: 90px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 83.333%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.logo {
+    width: 220px;
+    height: 19px;
+    padding-left: 32px;   
+}
+
+.menu-list-btn {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 24px;
+    list-style-type: none;
+    color: #000000;
+
+}
+
+.cap-btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+    color: #ffffff;
+    width: 155px;
+    height: 46px;
+    border-radius: 14px;
+    background-color: #1B1A1A;
+    order: 2;
+}
+/*end cap*/
+/*MAIN*/
+.company-description-a {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #ECE7E4;
+}
+
+.preview-company {
+    padding: 77px 60px;
+    max-width: 600px;
+    max-height: 566px;
+}
+
+.name-company {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #645C55;
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+.title-company-description-a {
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 100;
+    color: #1B1A1A;
+    padding: 20px 143px 0px 40px;
+    margin: 0;
+}
+
+.text-company-description-a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #403E3B;
+    padding: 18px 51px 0px 40px;
+    margin: 0;
+}
+
+.btn-company-description-a {
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    color:#403E3B;
+    width: 133px;
+    height: 46px;
+    margin: 30px 371px 40px 45px;
+    border: none;
+}
+
+.img-company {
+    background-image:url(../images/company-description.png);
+    width: 720px;
+    height: 720px;
+}
+
+/*articles*/
+.articles {
+    margin: 0 auto;
+    max-width: 768px;
+    max-height: 582px;
+    padding-top: 100px;
+}
+
+.article-item {
+    display: flex;
+}
+
+.title-article {
+    width: 266px;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 100;
+}
+
+.content-article {
+    width: 501px;
+}
+
+.text-article {
+    font-size: 16px;
+    line-height: 24px;
+    color: #403E3B;
+}
+
+.img-author {
+    background-image: url(../images/img-author.png);
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    
+}
+
+.name-career {
+    padding-left: 20px;
+}
+
+.author-article {
+    display: flex;
+    align-items: center;
+}
+/*end articles*/
+/*example*/
+.example {
+    background-image: url(../images/example.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
+}
+
+.example-content {
+    width: 300px;
+    height: 600px;
+    margin-right: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.example-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+    color: #645C55;
+    letter-spacing: 2px;
+}
+
+.example-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #645C55;
+}
+/*end example*/
+
+
+/*END MAIN*/
+
+/*media*/
+
+@media(max-width: 820px) {
+   .container {
+    justify-content:space-around;
+   }
+
+   .menu-item {
+    display:  none;
+   }
+
+   .logo {
+    padding-left: 3.49%;
+   }
+
+   .cap-btn{
+    display: none;
+
+   }
+   .menu-btn {
+    display: inline-block;
+        width: 25px;
+        height: 20px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+   }
+
+    .menu-btn-label {
+        display: flex;
+        position: relative;
+        width: 35px;
+        height: 6px;
+        border-radius: 5px;
+        background-color: #1B1A1A;
+    }
+
+    .menu-btn-label::after {
+        display: flex;
+        position: absolute;
+        content: '';
+        width: 35px;
+        height: 6px;
+        border-radius: 5px;
+        background-color: #1B1A1A;
+        margin-top: 8px;
+    }
+
+    .menu-btn-label::before {
+        display: flex;
+        position: absolute;
+        content: '';
+        width: 35px;
+        height: 6px;
+        border-radius: 5px;
+        background-color: #1B1A1A;
+        bottom: 8px;
+    }
+
+    /*company-description-a*/
+    .img-company {
+        display: none;
+    }
+
+    .company-description-a {
+        position: relative;
+        background-image: url(../images/company-description.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .company-description-a::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:#000000;
+        opacity:0.3;
+    }
+
+    .preview-company {
+        max-width: 90vw;
+        max-height: 566px;
+        margin-left: 40px;
+        z-index: 1;
+    }
+
+    .title-company-description-a {
+        font-size: 7vw;
+        color: #ffffff;
+    }
+
+    .text-company-description-a {
+        font-size: 2vw;
+        color: #ffffff;
+    }
+
+    .btn-company-description-a {
+        color: #ffffff;
+    }
+
+    .name-company {
+        color: #ffffff;
+    }
+
+    /*articles*/
+    .articles {
+        margin: 0 auto;
+        max-width: 60vw;
+        
+        padding-top: 70px;
+    }
+    
+    .title-article {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    
+    .text-article {
+        font-size: 14px;
+        line-height: 22px;
+        color: #403E3B;
+    }
+    
+    .img-author {
+        background-image: url(../images/img-author.png);
+        border-radius: 50%;
+        width: 84px;
+        height: 84px;
+        
+    }
+    
+
+}
+
+/*FONST*/
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
